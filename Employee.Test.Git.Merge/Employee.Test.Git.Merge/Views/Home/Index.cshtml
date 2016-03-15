@@ -1,0 +1,13 @@
+﻿@model List<string>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Merge test</h1>
+    @foreach (var str in Model)
+    {
+        <p>@str</p>
+    }
+</div>
