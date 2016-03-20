@@ -24,8 +24,12 @@ namespace Employee.Test.Git.Merge.Services
 
             List<string> noShortFirstNames = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
 
+<<<<<<< HEAD
             return noShortFirstNames;
 >>>>>>> excludeShortFirstNames
+=======
+            return noShortFirstNames; 
+>>>>>>> refs/remotes/origin/excludeShortFirstNames
         }
     }
 }
