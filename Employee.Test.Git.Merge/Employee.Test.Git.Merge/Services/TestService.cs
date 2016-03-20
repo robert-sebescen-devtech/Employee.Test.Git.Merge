@@ -23,6 +23,5 @@ namespace Employee.Test.Git.Merge.Services
 
             return noShortFirstNames; 
         }
-    }'\n'
+    }
 }
-
