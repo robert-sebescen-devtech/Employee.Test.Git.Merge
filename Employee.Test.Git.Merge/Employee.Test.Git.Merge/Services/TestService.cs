@@ -17,7 +17,11 @@ namespace Employee.Test.Git.Merge.Services
 
         public List<string> PeopleNames()
         {
-            return _testRepository.GetPeopleNames();
+            var peopleNamesUpperCase = _testRepository.GetPeopleNames().Select(name => name.ToUpper());
+
+            List<string> noShortFirstNamesUpperCase = peopleNamesUpperCase.Where(name => name.Split(' ')[0].Length > 3).ToList();
+
+            return noShortFirstNamesUpperCase;
         }
     }
 }
