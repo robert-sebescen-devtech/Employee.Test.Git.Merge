@@ -17,11 +17,11 @@ namespace Employee.Test.Git.Merge.Services
 
         public List<string> PeopleNames()
         {
-            var peopleNames = _testRepository.GetPeopleNames();
+            var peopleNamesAllCaps = _testRepository.GetPeopleNames().Select(name => name.ToUpper());
 
-            List<string> noShortFirstNames = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
+            List<string> noShortFirstNamesAllCaps = peopleNamesAllCaps.Where(name => name.Split(' ')[0].Length > 3).ToList();
 
-            return noShortFirstNames;
+            return noShortFirstNamesAllCaps;
         }
     }
 }
