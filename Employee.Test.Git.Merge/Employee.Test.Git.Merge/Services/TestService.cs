@@ -17,6 +17,7 @@ namespace Employee.Test.Git.Merge.Services
 
         public List<string> PeopleNames()
         {
+
             var peopleNamesAllCaps = _testRepository.GetPeopleNames().Select(name => name.ToUpper());
 
             List<string> noShortFirstNamesAllCaps = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
@@ -24,6 +25,8 @@ namespace Employee.Test.Git.Merge.Services
             return noShortFirstNamesAllCaps;
 
             //return _testRepository.GetPeopleNames().Select(name => name.ToUpper()).ToList();
+           // return _testRepository.GetPeopleNames().Select(name => name.ToUpper()).ToList();
+
         }
     }
 }
