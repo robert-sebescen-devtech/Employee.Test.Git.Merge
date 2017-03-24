@@ -24,4 +24,4 @@ Your task is to fork this repository, merge these branches into master branch on
 
 Cheers
 
-Note: If you fail at your first attempt you can commit new changes and try again (and again, and again...)
+Note: If you fail at your first attempt you can commit new changes and try again (and again, and again...)..
