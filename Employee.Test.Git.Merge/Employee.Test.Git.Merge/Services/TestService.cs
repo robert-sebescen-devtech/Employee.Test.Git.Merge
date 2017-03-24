@@ -22,6 +22,7 @@ namespace Employee.Test.Git.Merge.Services
              List<string> noShortFirstNamesAllCaps = peopleNamesAllCaps.Where(name => name.Split(' ')[0].Length > 3).ToList();
  
              return noShortFirstNamesAllCaps;
+
         }
     }
 }
