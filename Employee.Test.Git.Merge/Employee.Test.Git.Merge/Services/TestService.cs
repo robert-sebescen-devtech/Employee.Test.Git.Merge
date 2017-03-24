@@ -20,4 +20,4 @@ namespace Employee.Test.Git.Merge.Services
             return _testRepository.GetPeopleNames();
         }
     }
-}
+} 
