@@ -18,10 +18,17 @@ namespace Employee.Test.Git.Merge.Services
         public List<string> PeopleNames()
         {
             var peopleNames = _testRepository.GetPeopleNames();
+            List<string> novaLista = new List<string>();
+            
+            List<string> noShortFirstNames = peopleNames.ToList();
+            foreach(String s in noShortFirstNames){
+                String ime = s.Split(' ')[0];
+                if(ime.Length>3){
+                    novaLista.add(s);
+                }
+            }
 
-            List<string> noShortFirstNames = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
-
-            return noShortFirstNames.Select(name => name.ToUpper()).ToList();
+            return novaLista;
         }
     }
 }
