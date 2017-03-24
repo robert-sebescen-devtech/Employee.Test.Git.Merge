@@ -17,7 +17,7 @@ namespace Employee.Test.Git.Merge.Services
 
         public List<string> PeopleNames()
         {
-            return _testRepository.GetPeopleNames().Select(name => name.ToUpper()).ToList();
+            return _testRepository.GetPeopleNames();
         }
     }
 }
