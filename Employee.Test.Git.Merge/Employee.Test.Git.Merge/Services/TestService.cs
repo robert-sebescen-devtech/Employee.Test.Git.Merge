@@ -23,6 +23,6 @@ namespace Employee.Test.Git.Merge.Services
             
             return noShortFirstNames.Select(name => name.ToUpper()).ToList();
 
-		}
+}
     }
 }
