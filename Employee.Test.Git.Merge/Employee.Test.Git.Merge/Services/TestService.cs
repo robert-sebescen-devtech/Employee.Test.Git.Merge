@@ -1,4 +1,4 @@
-﻿using Employee.Test.Git.Merge.Repositories;
+using Employee.Test.Git.Merge.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
