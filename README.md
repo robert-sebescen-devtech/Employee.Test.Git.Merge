@@ -16,7 +16,7 @@ Project manager have assigned one task for each of the developers.
 Both of them created new branch from master branch and started implementing their tasks.
 
 John's task: "We hate worrying about the casing in the people's names, make them all upper cased!"
-Mike's task: "Please exclude people who's first name is shorted than 4 letters because of reasons... One of them being that I am your manager and I(!) want you to do so!"
+Mike's task: "Please exclude people who's first name is shorted than 3 letters because of reasons... One of them being that I am your manager and I(!) want you to do so!"
 
 They both have successfully completed their tasks, but the manager could not see these changes because they were not on the master branch.
 
