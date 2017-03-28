@@ -1,3 +1,11 @@
+
+# merge-test
+Testiranje testiranje 2
+
+
+# merge-test
+Testiranje 1
+
 Git Merge Challenge Task
 
 Purpose of this repository is to test your merging skills for DEVTECH's Challenge 2016.
@@ -25,3 +33,4 @@ Your task is to fork this repository, merge these branches into master branch on
 Cheers
 
 Note: If you fail at your first attempt you can commit new changes and try again (and again, and again...).
+
