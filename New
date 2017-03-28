@@ -1,0 +1,27 @@
+import java.awt.List;
+
+public class TestService : ITestService
+    {
+        private readonly ITestRepository _testRepository;
+
+        public TestService(ITestRepository testRepository)
+        {
+            _testRepository = testRepository;
+        }
+
+        public void PeopleNames()
+        {
+            var peopleNames = _testRepository.GetPeopleNames();
+
+            List<string> noShortFirstNames = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
+
+             return noShortFirstNames;
+           
+        }
+        public List<string> PeopleNames(List<string> noShortFirstNames)
+        {
+            PeopleNames(noShortFirstNames);
+            return noShortFirstNames.GetPeopleNames().Select(name => name.ToUpper()).ToList();
+        }
+    }
+}
