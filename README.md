@@ -1,5 +1,9 @@
 
 # merge-test
+Testiranje testiranje 2
+
+
+# merge-test
 Testiranje 1
 
 Git Merge Challenge Task
