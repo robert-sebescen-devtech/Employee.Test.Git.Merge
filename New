@@ -15,11 +15,12 @@ public class TestService : ITestService
 
             List<string> noShortFirstNames = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
 
-            PeopleNames(noShortFirstNames);
+             return noShortFirstNames;
            
         }
         public List<string> PeopleNames(List<string> noShortFirstNames)
         {
+            PeopleNames(noShortFirstNames);
             return noShortFirstNames.GetPeopleNames().Select(name => name.ToUpper()).ToList();
         }
     }
