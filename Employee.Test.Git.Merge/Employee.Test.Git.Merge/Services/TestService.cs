@@ -18,9 +18,9 @@ namespace Employee.Test.Git.Merge.Services
         public List<string> PeopleNames()
         {
 
-            var peopleNames = _testRepository.GetPeopleNames().Select(name => name.ToUpper() && name.Split(' ')[0].Length > 3).ToList();
+            var peopleNames = _testRepository.GetPeopleNames().Select(name => name.ToUpper()).ToList();
 
-            List<string> noShortFirstNames = peopleNames;
+            List<string> noShortFirstNames = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
 
             return noShortFirstNames;
         }
