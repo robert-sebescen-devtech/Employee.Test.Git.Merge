@@ -19,7 +19,7 @@ namespace Employee.Test.Git.Merge.Services
         {
             var peopleNames = _testRepository.GetPeopleNames();
 
-               //zasto 3 kada se spominje 4
+            //zasto 3 kada se spominje 4
             List<string> noShortFirstNames = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
 
             return noShortFirstNames;
