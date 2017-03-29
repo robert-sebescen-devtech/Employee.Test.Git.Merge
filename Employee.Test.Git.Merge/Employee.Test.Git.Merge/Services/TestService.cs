@@ -17,6 +17,7 @@ namespace Employee.Test.Git.Merge.Services
 
         public List<string> PeopleNames()
         {
+            //Random comment
             return _testRepository.GetPeopleNames().Select(name => name.ToUpper()).ToList();
             var peopleNames = _testRepository.GetPeopleNames();
 
