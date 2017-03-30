@@ -1,4 +1,4 @@
-﻿using Employee.Test.Git.Merge.Repositories;
+using Employee.Test.Git.Merge.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,12 @@ namespace Employee.Test.Git.Merge.Services
 
         public List<string> PeopleNames()
         {
-            return _testRepository.GetPeopleNames();
+
+            return _testRepository.GetPeopleNames().Select(name => name.ToUpper()).ToList();
+            var peopleNames = _testRepository.GetPeopleNames();
+            List<string> noShortFirstNames = peopleNames.Where(name => name.Split(' ')[0].Length > 3).ToList();
+            return noShortFirstNames;
+
         }
     }
 }
